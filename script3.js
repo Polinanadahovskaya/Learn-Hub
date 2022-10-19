@@ -1,5 +1,7 @@
 const form = document.querySelector('.form_singup');
 
+export const values1 = {};
+
 function formValue (event) {
     event.preventDefault();
 
@@ -8,12 +10,11 @@ function formValue (event) {
     const email = form.querySelector('[name = "Email"]');
     const password = form.querySelector('[name = "password"]');
 
-    const values1 = {
-        login: login.value,
-        telephone: telephone.value,
-        email: email.value,
-        password: password.value
-    };
+    values1.login = login.value;
+    values1.telephone = telephone.value;
+    values1.email = email.value;
+    values1.password = password.value
+
 
     console.log(values1)
 }
