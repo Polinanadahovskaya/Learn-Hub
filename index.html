@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <script src="./script2.js"></script>
+    
+</head>
+<body>
+        <image class="logotip" src="./learnhub (1).svg" alt="logo"></image>
+    <main>
+    <article class="container">
+        <div class="block">
+            <section class="block_item block-item">
+                <h2 class="block-item_title">
+                    Вы зарегестрированы?
+                </h2>
+                <button class="block-item_button singin-button">
+                    Войти
+                </button>
+            </section>
+            <section class="block_item block-item">
+                <h2 class="block-item_title">
+                    Ещё нет аккаунта?
+                </h2>
+                <button class="block-item_button singup-button">
+                    Зарегистрируйся
+                </button>
+            </section>
+        </div>
+
+        <div class="form-box">
+            <form action="#" class="form form_singin" method="POST">
+                <h3 class="form__title">
+                    Вход
+                </h3>
+
+                <p>
+                    <input type="text" class="form__input" placeholder="Логин" name="login">
+                </p>
+                <p>
+                    <input type="password" class="form__input"  placeholder="Пароль" name="password">
+                </p>
+                <p>
+                    <button class="form__button" type="submit">Войти</button>
+                </p>
+                <p>
+                    <a href="#" class="form__forgot">Восстановить пароль</a>
+                </p>
+            </form>
+
+
+            <form class="form form_singup" action="#" method="POST">
+                <h3 class="form__title">
+                    Регистрация
+                </h3>
+
+                <p>
+                    <input type="text" class="form__input" name="login" placeholder="Логин">
+                </p>
+                <p>
+                    <input type="tel" class="form__input tel" name="telephone" placeholder="Телефон">
+                </p>
+                <p>
+                    <input type="email" class="form__input" name="Email" placeholder="Email"></input>
+                </p>
+                <p>
+                    <input type="password" class="form__input" name="password" placeholder="Пароль"></input>
+                </p>
+                <p>
+                    
+                    <button class="form__button form__button_singup" type="submit">Зарегистрироваться</button>
+                </p>
+                
+            </form>
+            <script src="./script3.js"></script>
+            <script src="./script4.js"></script>
+        <!-- </div>
+        <table id="table" style="display: none">
+            <tr>
+              <td id="input">
+              </td>
+            </tr>
+          </table>
+          <a href="#" style="display: none" id="downloadLink"></a> -->
+
+    </article>
+</main> 
+ 
+</body>
+</html>
