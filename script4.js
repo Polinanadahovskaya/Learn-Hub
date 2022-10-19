@@ -14,7 +14,7 @@ function formValueEntry (event) {
 
 
     console.log(values2)
-    
+
 
     
 }
