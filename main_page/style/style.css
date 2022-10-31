@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+margin: 0;
+padding: 0;
+background:linear-gradient(to right, #2f2e2c, #703fec);
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  background:linear-gradient(to left, #2f2e2c, #2ed573);
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+}
+
+.img_logo{
+    width: 7.45vw;
+    height: 12.63vh;
+    margin: 0;
+    margin-left: 0.69vw;
+    margin-top:  0.38vh;
+    margin: 0;
+    margin-right: 30vw;
+}
+
+.dropbtn {
+    background: none;
+    color: #09090a;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+
+.dropdown {
+    display: inline-block;
+    justify-content: space-around;
+   
+}
+
+.dropdown-content {
+    display: none;
+    background:linear-gradient(to left, #2f2e2c, #2ed573);
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #2ed573;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  position: fixed;
+  display: block; 
+}
+
+.dropdown:hover .dropbtn {
+  transition: 0.5s;
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 1), 0px 0px 5px rgba(255, 255, 255, 1);
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(55, 55, 55, 0.277);
+}
+
+.course{
+  text-align: center;
+  font-size: 5vw;
+}
+
+.our_course{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    justify-items: center;
+}
+
+.our_course > div {
+    font-size: 1.5vw;
+    text-align: center;
+    background: #725699;
+  }
+ 
+  .course_div{
+    width: 27vw;
+    height: 71.5vh;
+    border-radius: 10px;
+  }
+
+  .course_img{
+    margin-top: 2px;
+    width: 22vw;
+    height: 28.6vh;
+    text-align: center;
+  }
+
+  .course_name{
+    margin-bottom: 2px;
+  }
+
+  .course_about{
+    margin: 0;
+  }
+
+  .dropdow_flex{
+    margin-block: 100px;
+    display:inline-block;
+  }
+
+  .footer{
+    display: flex;
+  }
+
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex; 
+    align-items: center;  
+    position: fixed;
+    top: 4.7vh;
+    right: 1vw;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    margin: 0;
+    right: -1000%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #167e29;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 1vw;
+    
+  }
+
+  
+
+
+.mouse-parallax {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 200px;
+}
+.mouse-parallax-lh
+ {
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 110%;
+    transition: all 0.5s ease;  
+    background-image: url("../img/learnhub.svg") ;
+    background-size: 100px 200px;
+    
+}
